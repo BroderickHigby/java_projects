@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Student 
+ {
+	Scanner keyboard = new Scanner(System.in);
+ 	private String name;
+
+ 	
+ 	public Student()
+ 	{
+ 		this.name = "";
+ 	}
+ 	
+ 	public Student(String name)
+ 	{
+ 		this.name = name;
+ 	}
+ 	
+ 	public void setName()
+ 	{
+ 		System.out.println("Enter the student's name");
+ 		this.name =  keyboard.nextLine();
+ 	}
+ 	
+ 	public String getName()
+ 	{
+ 		return this.name;
+ 	}
+ 	
+ 	public String toString()
+ 	{
+ 		return "Student name: " + this.name + "\n";
+ 	}
+ }

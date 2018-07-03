@@ -1,0 +1,76 @@
+
+import java.util.ArrayList;
+ import java.util.Scanner;
+ 
+ 
+ public class StudentTester 
+ {
+ 	public static void main(String[] args)
+ 	{
+ 		ArrayList<Student> studentList = new ArrayList<Student>();
+ 		Scanner keyboard = new Scanner(System.in);
+ 		boolean loop = true;
+ 		int choice;
+ 		String option;
+ 		
+ 		while(loop)
+ 		{
+ 			System.out.println("Add Student To Beginning Of List(1) - " +
+ 					 "Add Student To End Of List(2) - Remove Student At Beginning Of List(3) -" +
+ 					 " Remove Student By Name On List(4) - Exit(5)");
+ 			choice = keyboard.nextInt();
+ 			keyboard.nextLine();
+ 			
+ 			if(choice == 1)
+ 			{
+ 				String name;
+ 				Student temp;
+ 				
+ 				System.out.println("Enter student name to add to the beginning of the list");
+ 				name = keyboard.nextLine();
+ 				
+ 				temp = new Student(name);
+ 				studentList.add(0, temp);
+ 				
+ 			}
+ 			else if(choice == 2)
+ 			{
+ 				String name;
+ 				Student temp;
+ 				System.out.println("Enter student name to add to the end of the list");
+ 				name = keyboard.nextLine();
+ 				
+ 				temp = new Student(name);
+ 				studentList.add(temp);
+ 			
+ 			}
+ 			else if(choice == 3)
+ 			{
+ 				studentList.remove(0);
+ 				System.out.println("Removed the student at the beginning of the list!");
+ 			}
+ 			else if(choice ==4)
+ 			{
+ 				String removeName;
+ 				System.out.println("Enter the student you want to remove!");
+ 				removeName = keyboard.nextLine();
+ 				
+ 				for(int i = 0; i < studentList.size(); i++)
+ 				{
+ 					if(studentList.get(i).equals(removeName))
+ 					{
+ 						studentList.remove(i);
+ 						break;
+ 					}
+ 				}
+ 			}
+ 			
+ 			else if(choice == 5)
+ 			{
+ 				loop = false;
+ 			}
+ 
+ 		}
+ 		System.out.println("Good-bye!");
+ 	}
+ }

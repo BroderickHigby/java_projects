@@ -1,0 +1,52 @@
+
+import java.util.ArrayList;
+ import java.util.Scanner;
+ 
+ 
+ public class StudentTester 
+ {
+ 	public static void main(String[] args)
+ 	{
+ 		StudentList list = new StudentList();
+ 		Scanner keyboard = new Scanner(System.in);
+ 		boolean loop = true;
+ 		int choice;
+ 		
+ 		while(loop)
+ 		{
+ 			System.out.println("Add Student To Beginning Of List(1) - " +
+ 					 "Add Student To End Of List(2) - Remove Student At Beginning Of List(3) -" +
+ 					 " Remove Student By Name On List(4) - Exit(5)");
+ 			choice = keyboard.nextInt();
+ 			keyboard.nextLine();
+ 			
+ 			if(choice == 1)
+ 			{
+ 				list.addStudentToFront();
+ 				
+ 			}
+ 			else if(choice == 2)
+ 			{
+ 				list.addStudentToBack();
+ 			
+ 			}
+ 			else if(choice == 3)
+ 			{
+ 				list.removeFirstStudent();
+ 			}
+ 			else if(choice == 4)
+ 			{
+ 				list.removeByName();
+ 			}
+ 			
+ 			else if(choice == 5)
+ 			{
+ 				loop = false;
+ 			}
+ 
+ 		}
+ 		System.out.println("Here is the list of students in order!");
+ 		list.printList();
+ 		System.out.println("Good-bye!");
+ 	}
+ }
