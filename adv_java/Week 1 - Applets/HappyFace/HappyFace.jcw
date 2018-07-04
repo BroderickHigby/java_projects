@@ -1,0 +1,16 @@
+<?xml?>
+<workspace>
+	<settings>
+		<label>HappyFace</label>
+	</settings>
+	<users>
+		<user>
+			<path>HappyFace.jcu</path>
+		</user>
+	</users>
+	<projects>
+		<project>
+			<path>HappyFace.jcp</path>
+		</project>
+	</projects>
+</workspace>

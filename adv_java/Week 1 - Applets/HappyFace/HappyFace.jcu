@@ -1,0 +1,32 @@
+<?xml?>
+<workspace_user>
+	<active_project>
+		<label>HappyFace</label>
+	</active_project>
+	<projects>
+		<project>
+			<label>HappyFace</label>
+			<showfiles>false</showfiles>
+			<folderitem>
+				<path>classes</path>
+			</folderitem>
+			<folderitem>
+				<path>src</path>
+			</folderitem>
+		</project>
+	</projects>
+	<open_files>
+		<docitem>
+			<path>classes\HappyFace.htm</path>
+			<source>true</source>
+			<index>0</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>src\HappyFace.java</path>
+			<source>true</source>
+			<index>1</index>
+			<active>true</active>
+		</docitem>
+	</open_files>
+</workspace_user>

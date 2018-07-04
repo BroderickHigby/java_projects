@@ -1,0 +1,19 @@
+<?xml?>
+<workspace>
+	<settings>
+		<label>OlympicRings</label>
+	</settings>
+	<users>
+		<user>
+			<path>OlympicRings.jcu</path>
+		</user>
+	</users>
+	<projects>
+		<project>
+			<path>..\YellowFace\YellowFace.jcp</path>
+		</project>
+		<project>
+			<path>OlympicRings.jcp</path>
+		</project>
+	</projects>
+</workspace>
